@@ -4,26 +4,9 @@ Wallpaper Changer is a desktop application for Windows that automatically change
 
 > I wrote this because the slideshow feature on Windows keeps stopping randomly, and they haven't bothered to fix it. Unlike similar apps, this one is very lightweight and resource-friendly.
 
-## Features
-
-- **Automatic Wallpaper Cycling:** Automatically changes your desktop wallpaper from a selected folder. 
-- **Customizable Interval:** Set the time interval for changing wallpapers in seconds, minutes, or hours.
-- **Randomize Order:** Shuffle the order of the wallpapers for a new look every time. 
-- **System Tray Integration:** Minimize the application to the system tray to run it in the background. 
-- **Persistent Settings:** The application saves your settings (folder path, interval, and shuffle preference) so you don't have to configure them every time you launch it.
-    
-
 ## Usage
 
-If you just want to use it, download the `wallpaper_changer.exe` from the releases and run it.
-- **Select a Folder:** Click the "Browse" button to choose the directory containing your wallpapers.
-- **Set the Interval:** Enter the desired time and select the unit (Seconds, Minutes, or Hours).
-- **Shuffle (Optional):** Check the "Shuffle the picture order" box to randomize the wallpaper sequence.
-- **Start:** Click the "Start" button to begin changing your wallpapers. The application will start cycling through the images in the selected folder.
-- **Stop:** Click the "Stop" button to halt the wallpaper changing process.
-- **Minimize to Tray:** Click "Minimize" to send the application to your system tray. It will continue to run in the background.
-
-Otherwise, if you want to run it with Python or build it yourself, follow the instructions below.
+If you just want to use it, download the `wallpaper_changer.exe` from the releases and run it, otherwise, if you want to run it with Python or build it yourself, follow the instructions below.
 
 ## Prerequisites
 
