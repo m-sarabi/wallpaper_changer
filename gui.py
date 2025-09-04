@@ -150,7 +150,7 @@ class WallpaperChangerGUI(ctk.CTk):
         ## Status bar
         status_frame = ctk.CTkFrame(self, corner_radius=5, border_width=2, border_color='#555555')
         status_frame.pack(padx=0, pady=(5, 0), side='left')
-        self.status_label = ctk.CTkLabel(status_frame, text="Status: Ready", anchor="center",
+        self.status_label = ctk.CTkLabel(status_frame, text="Status: Ready", anchor="center", text_color='white',
                                          font=ctk.CTkFont(size=14))
         self.status_label.pack(side="bottom", pady=6, padx=10)
 
@@ -194,7 +194,8 @@ class WallpaperChangerGUI(ctk.CTk):
         self.stop_event.clear()
         self.start_button.configure(state="disabled", image=self.start_image_disabled)
         self.stop_button.configure(state="normal", image=self.stop_image)
-        self.status_label.configure(text="Status: Running...")
+        self.status_label.configure(text="Status: Running...", text_color='#55ff55',
+                                    font=ctk.CTkFont(size=14, weight='bold'))
 
         self.wallpaper_thread = threading.Thread(
             target=self._run_changer,
@@ -211,7 +212,7 @@ class WallpaperChangerGUI(ctk.CTk):
 
         self.start_button.configure(state="normal", image=self.start_image)
         self.stop_button.configure(state="disabled", image=self.stop_image_disabled)
-        self.status_label.configure(text="Status: Stopped")
+        self.status_label.configure(text="Status: Stopped", text_color='white', font=ctk.CTkFont(size=14))
 
     def _run_changer(self, folder: str):
         """Run the changer thread to change the wallpaper"""
