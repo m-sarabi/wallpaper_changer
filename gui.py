@@ -155,11 +155,11 @@ class WallpaperChangerGUI(ctk.CTk):
         self.status_label.pack(side="bottom", pady=6, padx=10)
 
         ## Repository
-        self.status_label = ctk.CTkLabel(self, text="by m_sarabi", anchor="center", text_color="#888888",
+        self.author_label = ctk.CTkLabel(self, text="by m_sarabi", anchor="center", text_color="#888888",
                                          cursor='hand2', font=ctk.CTkFont(size=12))
-        self.status_label.bind("<Button-1>",
+        self.author_label.bind("<Button-1>",
                                lambda e: webbrowser.open_new("https://github.com/m-sarabi/wallpaper_changer"))
-        self.status_label.pack(side="right", pady=6, padx=10)
+        self.author_label.pack(side="right", pady=6, padx=10)
 
     def select_folder(self):
         """Open the folder selection dialog and get the folder path"""
