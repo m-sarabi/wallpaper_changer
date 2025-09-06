@@ -43,13 +43,6 @@ The `wallpaper_changer.spec` file is used with `PyInstaller` to create a standal
     ```
 3. The executable will be located in the `dist` folder.
 
-## Project Structure
-
-- [`main.py`](http://main.py): Contains the core logic for setting the wallpaper and retrieving image files.
-- [`gui.py`](http://gui.py): The main application file with the `CustomTkinter` GUI and threading logic.
-- `wallpaper_changer.spec`: The PyInstaller spec file for building the executable.
-- `assets/`: Folder for application icons and images used in the GUI.
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
